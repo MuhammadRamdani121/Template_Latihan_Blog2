@@ -1,0 +1,113 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* header start */
+#header{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 100vh;
+    margin-left: 40px;
+    align-items: center;
+    background: #000;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 250px;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.nav-header a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px;
+}
+/* header end */
+
+/* section 1 start */
+#section-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 1 kolom untuk Box 1, 2 kolom untuk Box 2 dan Box 3 */
+    grid-template-rows: repeat(2, 1fr); /* 3 baris */
+    gap: 10px; /* jarak antar box */
+    height: 400px; /* tinggi total grid */
+    padding: 40px 90px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.section-box1 {
+    grid-column: 1; /* Box 1 di kolom 1 */
+    grid-row: 1 / span 2; /* Box 1 mengisi baris 1 dan 2 */
+    height: 250px;
+}
+
+.section-box2 {
+    grid-column: 2; /* Box 2 di kolom 2 */
+    grid-row: 1; /* Di baris 1 */
+
+}
+
+.section-box3 {
+    grid-column: 2; /* Box 3 di kolom 2 */
+    grid-row: 2; /* Di baris 2 */
+    height: 190px;
+}
+/* section 1 end */
+
+/*section 2 start  */
+#section-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    padding: 40px 90px;
+    height: 200px;
+}
+.section2-box1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.section2-box2{
+    grid-column: 1;
+    grid-row: 2;
+    height: 200px;
+}
+.section2-box3{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 300px;
+}
+/* section 2 end */
+
+/* footer start */
+#footer{
+    height: 100px;
+    margin: 0px 90px;
+    margin-top: 200px;
+    margin-left: 380px;
+    color: white;
+    background: rgb(146, 217, 230);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+}
+.nav-footer a{
+    text-decoration: none;
+    color: white;
+}
+/* footer end */
+
+
+
+
